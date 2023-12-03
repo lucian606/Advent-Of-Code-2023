@@ -1,19 +1,6 @@
 package solvers
 
-import java.io.File
-
 class DayOneSolver(inputPath: String) : DaySolver(inputPath) {
-
-    private val input = mutableListOf<String>()
-
-    init {
-        parseInput()
-    }
-
-    override fun parseInput() {
-        val file = File(inputPath)
-        file.useLines { lines -> lines.forEach { input.add(it) } }
-    }
 
     override fun solvePart1(): String {
         var calibrationSum = 0
