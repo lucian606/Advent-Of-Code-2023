@@ -1,4 +1,3 @@
-import solvers.DayOneSolver
 import org.junit.jupiter.api.Test
 import solvers.DayTwoSolver
 import kotlin.test.assertEquals

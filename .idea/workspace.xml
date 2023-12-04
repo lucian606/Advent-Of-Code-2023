@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d2f7a61-44c9-4dfa-a66b-fbc0ccbd62d3" name="Changes" comment="Solve Day #2">
-      <change afterPath="$PROJECT_DIR$/src/main/inputs/day02.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayTwoSolver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/inputs/day02.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/DayTwoTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/inputs/day03.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/inputs/day04.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayFourSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayThreeSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/inputs/day03.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/DayFourTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/DayThreeTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DayOneSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayOneSolver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySolver.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySolverFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySolverFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/DayTwoTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/DayTwoTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -51,6 +56,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lucian/IdeaProjects/Advent-Of-Code-2023/src/main/inputs&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -59,15 +65,20 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucian\IdeaProjects\Advent-Of-Code-2023\src\main\inputs" />
+      <recent name="C:\Users\Lucian\IdeaProjects\Advent-Of-Code-2023\src\test\inputs" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="daysolver" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="solvers" />
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="DayOneTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DayFourTest.testPartOne" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -80,7 +91,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;DayOneTest&quot;" />
+            <option value="&quot;DayFourTest.testPartOne&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -90,7 +101,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DayOneTest.testPartOne" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DayFourTest.testPartTwo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -103,7 +114,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;DayOneTest.testPartOne&quot;" />
+            <option value="&quot;DayFourTest.testPartTwo&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -113,7 +124,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DayTwoTest.testPartOne" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DayThreeTest.testPartOne" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -126,7 +137,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;DayTwoTest.testPartOne&quot;" />
+            <option value="&quot;DayThreeTest.testPartOne&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -136,7 +147,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DayTwoTest.testPartTwo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DayThreeTest.testPartTwo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -149,7 +160,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;DayTwoTest.testPartTwo&quot;" />
+            <option value="&quot;DayThreeTest.testPartTwo&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,10 +180,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.DayTwoTest.testPartTwo" />
-        <item itemvalue="Gradle.DayTwoTest.testPartOne" />
-        <item itemvalue="Gradle.DayOneTest.testPartOne" />
-        <item itemvalue="Gradle.DayOneTest" />
+        <item itemvalue="Gradle.DayFourTest.testPartTwo" />
+        <item itemvalue="Gradle.DayFourTest.testPartOne" />
+        <item itemvalue="Gradle.DayThreeTest.testPartTwo" />
+        <item itemvalue="Gradle.DayThreeTest.testPartOne" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +198,11 @@
       <workItem from="1701465866933" duration="6109000" />
       <workItem from="1701506515137" duration="531000" />
       <workItem from="1701508905375" duration="2235000" />
+      <workItem from="1701622857272" duration="1021000" />
+      <workItem from="1701643577756" duration="2666000" />
+      <workItem from="1701684178090" duration="952000" />
+      <workItem from="1701690115210" duration="2016000" />
+      <workItem from="1701694716364" duration="3931000" />
     </task>
     <task id="LOCAL-00001" summary="Create repo and solve Day #1">
       <created>1701471878758</created>
@@ -195,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701471878758</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Solve Day #2">
+      <created>1701622910199</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701622910199</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
