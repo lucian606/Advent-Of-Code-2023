@@ -1,17 +1,19 @@
 package solvers
 
+const val RED = 0
+const val GREEN = 1
+const val BLUE = 2
+const val MAX_RED = 12
+const val MAX_GREEN = 13
+const val MAX_BLUE = 14
+val COLORS = listOf("red", "green", "blue")
+
 class DayTwoSolver(inputPath: String) : DaySolver(inputPath) {
 
-    private val RED = 0
-    private val GREEN = 1
-    private val BLUE = 2
-    private val MAX_RED = 12
-    private val MAX_GREEN = 13
-    private val MAX_BLUE = 14
-    private val COLORS = listOf("red", "green", "blue")
 
-    fun getBallsFromRound(round: String): List<Int> {
-        val result = mutableListOf<Int>(0, 0, 0)
+
+    private fun getBallsFromRound(round: String): List<Int> {
+        val result = mutableListOf(0, 0, 0)
         val ballGroups = round.split(", ")
         for (group in ballGroups) {
             val ballsAmount = group.split(' ')[0].toInt()
@@ -60,7 +62,7 @@ class DayTwoSolver(inputPath: String) : DaySolver(inputPath) {
                     minimumCubeQuantities[BLUE] = balls[BLUE]
                 }
             }
-            powerSum += minimumCubeQuantities.reduce({ acc, x -> x * acc })
+            powerSum += minimumCubeQuantities.reduce { acc, x -> x * acc }
         }
         return powerSum.toString()
     }

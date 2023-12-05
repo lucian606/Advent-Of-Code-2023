@@ -14,7 +14,7 @@ class DayOneSolver(inputPath: String) : DaySolver(inputPath) {
         return calibrationSum.toString()
     }
 
-    fun getDigitStringValue(digitString: String): Int {
+    private fun getDigitStringValue(digitString: String): Int {
         val digitStrings = listOf(
             "one",
             "two",
@@ -31,7 +31,7 @@ class DayOneSolver(inputPath: String) : DaySolver(inputPath) {
         return -1
     }
 
-    fun getDigitsFromString(s: String): Pair<Int, Int> {
+    private fun getDigitsFromString(s: String): Pair<Int, Int> {
         var first = 0
         var second = 0
         for (i in s.indices) {
@@ -59,7 +59,7 @@ class DayOneSolver(inputPath: String) : DaySolver(inputPath) {
     }
 
     override fun solvePart2(): String {
-        var calibrationSum: Int = 0
+        var calibrationSum = 0
         for (line in input) {
             val digits: Pair<Int, Int> = getDigitsFromString(line)
             calibrationSum += digits.first * 10 + digits.second

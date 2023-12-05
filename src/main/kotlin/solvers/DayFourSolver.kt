@@ -2,14 +2,8 @@ package solvers
 
 class DayFourSolver(inputPath: String) : DaySolver(inputPath) {
 
-    fun convertStringToList(listStr: String): List<Int> {
-        return listStr.split(" ")
-            .filter { !it.isEmpty() }
-            .map { x -> x.toInt() }
-    }
-
-    fun getCardPoints(winningNumbers: List<Int>, pickedNumbers: List<Int>): Int {
-        val matchedNumbers = winningNumbers.intersect(pickedNumbers).size
+    private fun getCardPoints(winningNumbers: List<Long>, pickedNumbers: List<Long>): Int {
+        val matchedNumbers = winningNumbers.intersect(pickedNumbers.toSet()).size
         return if (matchedNumbers == 0) 0 else 1 shl matchedNumbers - 1
     }
 
@@ -26,12 +20,12 @@ class DayFourSolver(inputPath: String) : DaySolver(inputPath) {
         return points.toString()
     }
 
-    fun getMatchedNumbers(winningNumbers: List<Int>, pickedNumbers: List<Int>): Int {
-        return winningNumbers.intersect(pickedNumbers).size
+    private fun getMatchedNumbers(winningNumbers: List<Long>, pickedNumbers: List<Long>): Int {
+        return winningNumbers.intersect(pickedNumbers.toSet()).size
     }
 
     override fun solvePart2(): String {
-        var cardCopies = MutableList(input.size) { 1 }
+        val cardCopies = MutableList(input.size) { 1 }
         for ((i, line) in input.withIndex()) {
             val numbers = line.split(":")[1]
             val winningNumbersString = numbers.split("|")[0].trim()

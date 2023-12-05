@@ -1,6 +1,5 @@
 import org.junit.jupiter.api.Test
 import solvers.DayFourSolver
-import solvers.DayThreeSolver
 import kotlin.test.assertEquals
 
 class DayFourTest {
