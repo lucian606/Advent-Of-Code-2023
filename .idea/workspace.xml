@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d2f7a61-44c9-4dfa-a66b-fbc0ccbd62d3" name="Changes" comment="Solve Day #6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DayFiveSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayFiveSolver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DayFourSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayFourSolver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DayOneSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayOneSolver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySixSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySixSolver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DayThreeSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayThreeSolver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DayTwoSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayTwoSolver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/DayFiveTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/DayFiveTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/DayFourTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/DayFourTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/DayOneTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/DayOneTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/DaySixTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/DaySixTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/DayThreeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/DayThreeTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/DayTwoTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/DayTwoTest.kt" afterDir="false" />
-    </list>
+    <list default="true" id="7d2f7a61-44c9-4dfa-a66b-fbc0ccbd62d3" name="Changes" comment="Complete Day #5.2 (FINALLY!!!!!!!)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,7 +203,7 @@
       <workItem from="1701791825304" duration="11535000" />
       <workItem from="1701815339713" duration="545000" />
       <workItem from="1701891346749" duration="3202000" />
-      <workItem from="1701897653182" duration="4552000" />
+      <workItem from="1701897653182" duration="4652000" />
     </task>
     <task id="LOCAL-00001" summary="Create repo and solve Day #1">
       <created>1701471878758</created>
@@ -268,7 +254,28 @@
       <option name="project" value="LOCAL" />
       <updated>1701893149973</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Small tweaks">
+      <created>1701902588893</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701902588893</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Small tweaks">
+      <created>1701902595805</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701902595805</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Complete Day #5.2 (FINALLY!!!!!!!)">
+      <created>1701902612586</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701902612586</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +299,8 @@
     <MESSAGE value="Solve Day #3 and Day #4" />
     <MESSAGE value="Solve Day #5.1" />
     <MESSAGE value="Solve Day #6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve Day #6" />
+    <MESSAGE value="Small tweaks" />
+    <MESSAGE value="Complete Day #5.2 (FINALLY!!!!!!!)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete Day #5.2 (FINALLY!!!!!!!)" />
   </component>
 </project>
