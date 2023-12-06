@@ -3,7 +3,6 @@ import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 class DayOneTest {
-
     @Test
     fun testPartOne() {
         val path = "src/test/inputs/day01part1.in"

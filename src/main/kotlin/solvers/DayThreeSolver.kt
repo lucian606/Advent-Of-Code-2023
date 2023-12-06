@@ -1,7 +1,6 @@
 package solvers
 
 class DayThreeSolver(inputPath: String) : DaySolver(inputPath) {
-
     data class MatrixNumber(val value: Int, val start: Int, val end: Int, val row: Int)
 
     fun getNumbersFromString(str: String, row: Int): List<MatrixNumber> {

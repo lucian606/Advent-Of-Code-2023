@@ -3,7 +3,6 @@ import solvers.DayFourSolver
 import kotlin.test.assertEquals
 
 class DayFourTest {
-
     @Test
     fun testPartOne() {
         val path = "src/test/inputs/day04.in"

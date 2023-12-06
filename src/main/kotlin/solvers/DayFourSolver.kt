@@ -1,7 +1,6 @@
 package solvers
 
 class DayFourSolver(inputPath: String) : DaySolver(inputPath) {
-
     private fun getCardPoints(winningNumbers: List<Long>, pickedNumbers: List<Long>): Int {
         val matchedNumbers = winningNumbers.intersect(pickedNumbers.toSet()).size
         return if (matchedNumbers == 0) 0 else 1 shl matchedNumbers - 1

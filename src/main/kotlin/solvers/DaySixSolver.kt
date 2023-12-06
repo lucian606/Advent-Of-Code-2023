@@ -1,7 +1,6 @@
 package solvers
 
 class DaySixSolver(inputPath: String) : DaySolver(inputPath) {
-
     private fun canBeatRecordDistance(time: Long, holdDuration: Long, recordDistance: Long): Boolean {
         return ((time - holdDuration) * holdDuration) > recordDistance
     }

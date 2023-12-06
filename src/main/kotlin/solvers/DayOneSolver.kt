@@ -1,7 +1,6 @@
 package solvers
 
 class DayOneSolver(inputPath: String) : DaySolver(inputPath) {
-
     override fun solvePart1(): String {
         var calibrationSum = 0
         for (line in input) {

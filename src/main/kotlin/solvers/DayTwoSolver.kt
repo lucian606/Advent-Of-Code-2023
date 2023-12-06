@@ -9,9 +9,6 @@ const val MAX_BLUE = 14
 val COLORS = listOf("red", "green", "blue")
 
 class DayTwoSolver(inputPath: String) : DaySolver(inputPath) {
-
-
-
     private fun getBallsFromRound(round: String): List<Int> {
         val result = mutableListOf(0, 0, 0)
         val ballGroups = round.split(", ")
