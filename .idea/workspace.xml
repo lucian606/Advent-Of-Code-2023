@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d2f7a61-44c9-4dfa-a66b-fbc0ccbd62d3" name="Changes" comment="Complete Day #5.2 (FINALLY!!!!!!!)" />
+    <list default="true" id="7d2f7a61-44c9-4dfa-a66b-fbc0ccbd62d3" name="Changes" comment="Complete Day #5.2 (FINALLY!!!!!!!)">
+      <change afterPath="$PROJECT_DIR$/src/main/inputs/day07.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySevenSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/inputs/day07.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/DaySevenTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySolverFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySolverFactory.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +130,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DayFourTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DaySevenTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;DayFourTest&quot;" />
+            <option value="&quot;DaySevenTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,7 +153,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'Advent-Of-Code-2023.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DaySevenTest.testPartOne" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,6 +165,8 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;DaySevenTest.testPartOne&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,10 +186,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.DaySevenTest" />
+        <item itemvalue="Gradle.DaySevenTest.testPartOne" />
         <item itemvalue="Gradle.DayFiveTest.testPartTwo" />
         <item itemvalue="Gradle.DayFiveTest.testPartOne" />
-        <item itemvalue="Gradle.Tests in 'Advent-Of-Code-2023.test'" />
-        <item itemvalue="Gradle.DayFourTest" />
       </list>
     </recent_temporary>
   </component>
@@ -204,6 +213,7 @@
       <workItem from="1701815339713" duration="545000" />
       <workItem from="1701891346749" duration="3202000" />
       <workItem from="1701897653182" duration="4652000" />
+      <workItem from="1701970246621" duration="6931000" />
     </task>
     <task id="LOCAL-00001" summary="Create repo and solve Day #1">
       <created>1701471878758</created>
@@ -275,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701902612586</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Complete Day #5.2 (FINALLY!!!!!!!)">
+      <created>1701970252224</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701970252224</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
