@@ -12,6 +12,8 @@ class DaySolverFactory {
             5 -> DayFiveSolver(path)
             6 -> DaySixSolver(path)
             7 -> DaySevenSolver(path)
+            8 -> DayEightSolver(path)
+            9 -> DayNineSolver(path)
             else -> null
         }
     }
