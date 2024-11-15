@@ -4,9 +4,14 @@ import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashSet
 
+typealias Point = Pair<Int, Int>
+typealias Edge = Pair<Point, Point>
+
 class DayTenSolver(inputPath: String) : DaySolver(inputPath) {
 
-    fun getStartPosition(): Pair<Int, Int> {
+    var startPipe = 'S'
+
+    fun getStartPosition(): Point {
         for (i in input.indices) {
             for (j in input[0].indices) {
                 if (input[i][j] == 'S') {
@@ -14,68 +19,98 @@ class DayTenSolver(inputPath: String) : DaySolver(inputPath) {
                 }
             }
         }
-        return Pair(-1, -1)
+        return Point(-1, -1)
     }
 
-    fun getPipesConnectedToStart(startPos: Pair<Int, Int>): List<Pair<Int, Int>> {
+    fun getPipesConnectedToStart(startPos: Point): Set<Point> {
         val row = startPos.first
         val col = startPos.second
-        val result = ArrayList<Pair<Int, Int>>()
+        val result = mutableSetOf<Point>()
         if (row - 1 >= 0 && input[row - 1][col] in "F|7") {
-            result.add(Pair(row - 1, col))
-        }
-        if (col + 1 < input[0].length && input[row][col + 1] in "J-7") {
-            result.add(Pair(row, col + 1))
+            result.add(Point(row - 1, col))
         }
         if (row + 1 < input.size && input[row + 1][col] in "J|L") {
-            result.add(Pair(row + 1, col))
+            result.add(Point(row + 1, col))
+        }
+        if (col + 1 < input[0].length && input[row][col + 1] in "J-7") {
+            result.add(Point(row, col + 1))
         }
         if (col - 1 >= 0 && input[row][col - 1] in "L-F") {
-            result.add(Pair(row, col - 1))
+            result.add(Point(row, col - 1))
         }
+
         return result
     }
 
-    fun getNeighbourPipes(curr: Pair<Int, Int>): ArrayList<Pair<Int, Int>> {
+    fun replaceStartPipe(startPos: Point) {
+        val row = startPos.first
+        val col = startPos.second
+        var connections = ""
+        if (row - 1 >= 0 && input[row - 1][col] in "F|7") {
+            connections += "U"
+        }
+        if (row + 1 < input.size && input[row + 1][col] in "J|L") {
+            connections += "D"
+        }
+        if (col + 1 < input[0].length && input[row][col + 1] in "J-7") {
+            connections += "R"
+        }
+        if (col - 1 >= 0 && input[row][col - 1] in "L-F") {
+            connections += "L"
+        }
+
+        startPipe = when (connections) {
+            "UR" -> 'L'
+            "UL" -> 'J'
+            "DL" -> '7'
+            "DR" -> 'F'
+            "UD" -> '|'
+            "LR" -> '-'
+            else -> 'S'
+        }
+
+    }
+
+    fun getNeighbourPipes(curr: Point, grid: MutableList<String> = input): ArrayList<Point> {
         val row = curr.first
         val col = curr.second
-        val result = ArrayList<Pair<Int, Int>>()
-        when (input[row][col]) {
+        val result = ArrayList<Point>()
+        when (grid[row][col]) {
             '|' -> {
-                if (row + 1 < input.size)
-                    result.add(Pair(row + 1, col))
+                if (row + 1 < grid.size)
+                    result.add(Point(row + 1, col))
                 if (row - 1 >= 0)
-                    result.add(Pair(row - 1, col))
+                    result.add(Point(row - 1, col))
             }
             'F' -> {
-                if (row + 1 < input.size)
-                    result.add(Pair(row + 1, col))
-                if (col + 1 < input[0].length)
-                    result.add(Pair(row, col + 1))
+                if (row + 1 < grid.size)
+                    result.add(Point(row + 1, col))
+                if (col + 1 < grid[0].length)
+                    result.add(Point(row, col + 1))
             }
             '7' -> {
-                if (row + 1 < input.size)
-                    result.add(Pair(row + 1, col))
+                if (row + 1 < grid.size)
+                    result.add(Point(row + 1, col))
                 if (col - 1 >= 0)
-                    result.add(Pair(row, col - 1))
+                    result.add(Point(row, col - 1))
             }
             '-' -> {
-                if (col + 1 < input[0].length)
-                    result.add(Pair(row, col + 1))
+                if (col + 1 < grid[0].length)
+                    result.add(Point(row, col + 1))
                 if (col - 1 >= 0)
-                    result.add(Pair(row, col - 1))
+                    result.add(Point(row, col - 1))
             }
             'L' -> {
-                if (col + 1 < input[0].length)
-                    result.add(Pair(row, col + 1))
+                if (col + 1 < grid[0].length)
+                    result.add(Point(row, col + 1))
                 if (row - 1 >= 0)
-                    result.add(Pair(row - 1, col))
+                    result.add(Point(row - 1, col))
             }
             'J' -> {
                 if (row - 1 >= 0)
-                    result.add(Pair(row - 1, col))
+                    result.add(Point(row - 1, col))
                 if (col - 1 >= 0)
-                    result.add(Pair(row, col - 1))
+                    result.add(Point(row, col - 1))
             }
         }
         return result
@@ -89,7 +124,7 @@ class DayTenSolver(inputPath: String) : DaySolver(inputPath) {
                 visited[i].add(false)
             }
         }
-        val queue = LinkedList<Pair<Pair<Int, Int>, Int>>()
+        val queue = LinkedList<Pair<Point, Int>>()
         var maxDistance = 0
         val start = getStartPosition()
         visited[start.first][start.second] = true
@@ -117,9 +152,9 @@ class DayTenSolver(inputPath: String) : DaySolver(inputPath) {
         return maxDistance
     }
 
-    fun getLoop(): Set<Pair<Int, Int>> {
-        val loop = HashSet<Pair<Int, Int>>()
-        val queue = LinkedList<Pair<Int, Int>>()
+    fun getLoop(): Set<Point> {
+        val loop = LinkedHashSet<Point>()
+        val queue = LinkedList<Point>()
         val start = getStartPosition()
         loop.add(start)
         val startNeighbours = getPipesConnectedToStart(start)
@@ -141,59 +176,78 @@ class DayTenSolver(inputPath: String) : DaySolver(inputPath) {
         return traverseLoop().toString()
     }
 
+    fun getLoopVertices(loop: Set<Point>): Set<Point> {
+        val startPos = getStartPosition()
+        replaceStartPipe(startPos)
+        println("Start replaced with $startPipe")
 
-    fun DFS(point: Pair<Int, Int>, loop: Set<Pair<Int, Int>>, visited: MutableSet<Pair<Int, Int>>): Unit {
-        if (point in visited || point in loop) {
-            return
+        val loopVertices = loop.filter { (x,y) -> !"|-S".contains(input[x][y]) }.toMutableSet()
+        if (startPipe != '-' && startPipe != '|') {
+            loopVertices.add(startPos)
         }
-        val row = point.first
-        val col = point.second
-        visited.add(point)
-        if (row == 0 || col == 0 || row == input.size - 1 || col == input[0].length - 1) {
-            return
-        }
-        DFS(Pair(row - 1, col), loop, visited)
-        DFS(Pair(row + 1, col), loop, visited)
-        DFS(Pair(row, col - 1), loop, visited)
-        DFS(Pair(row, col + 1), loop, visited)
+        return loopVertices
     }
 
-    fun isPointEnclosed(loop: Set<Pair<Int, Int>>, point: Pair<Int, Int>): Boolean {
-        val visited = HashSet<Pair<Int, Int>>()
-        if (point in loop) {
-            return false
-        }
-        DFS(point, loop, visited)
-        if (visited.any { it.first == 0
-                    || it.first == input.size - 1
-                    || it.second == 0
-                    || it.second == input[0].length - 1}) {
-            return false
-        }
-        return true
-    }
+    fun getLoopEdges(loop: Set<Point>, vertices: Set<Point>): Set<Edge> {
+        val startlessInput = input.map { it.replace('S', startPipe) }.toMutableList()
 
-    override fun solvePart2(): String {
-        val loop = getLoop()
-        var count = 0
-        val modifiedInput = ArrayList<String>()
-        for (i in input.indices) {
-            var modifiedLine = ""
-            for (j in input[0].indices) {
-                if (isPointEnclosed(loop, Pair(i, j))) {
-                    modifiedLine += "*"
-                    count += 1
-                } else if (Pair(i, j) in loop) {
-                    modifiedLine += input[i][j]
-                } else {
-                    modifiedLine += "."
+        val edges = LinkedHashSet<Edge>()
+        val stack = Stack<Point>()
+        var edgeStart = getStartPosition()
+        val visited = HashSet<Point>()
+        stack.push(edgeStart)
+        while (stack.isNotEmpty()) {
+            val currentVertex = stack.pop()
+            if (currentVertex in visited) {
+                continue
+            }
+            visited.add(currentVertex)
+            val neighbours = getNeighbourPipes(currentVertex, startlessInput)
+            for (neighbour in neighbours) {
+                if (neighbour in loop && neighbour !in visited) {
+                    stack.push(neighbour)
+                }
+
+                if (neighbour in vertices && neighbour != edgeStart && neighbour !in visited) {
+                    val edge = Edge(edgeStart, neighbour)
+                    edges.add(edge)
+                    edgeStart = neighbour
                 }
             }
-            modifiedInput.add(modifiedLine)
         }
-        modifiedInput.forEach {
-            println(it)
+
+        edges.add(Edge(edgeStart, getStartPosition()))
+
+        return edges
+    }
+
+    fun getShapeArea(edges: Set<Edge>): Int {
+        val vertices = edges.map { it.first }.toMutableList()
+        val verticesCount = vertices.size
+        vertices.add(vertices[0])
+
+        var firstShoelace = 0
+        var secondShoelace = 0
+        for (i in 0 until verticesCount) {
+            firstShoelace += vertices[i].first * vertices[i + 1].second
+            secondShoelace += vertices[i].second * vertices[i + 1].first
         }
-        return count.toString()
+
+        vertices.removeLast()
+
+        return Math.abs(firstShoelace - secondShoelace) / 2
+    }
+
+    fun getPointsInsideLoop(loop: Set<Point>, area: Int): Int {
+        return (area + 1 - loop.size / 2)
+    }
+    override fun solvePart2(): String {
+
+        val loop = getLoop()
+        val loopVertices = getLoopVertices(loop)
+        val loopEdges = getLoopEdges(loop, loopVertices)
+        val area = getShapeArea(loopEdges)
+
+        return getPointsInsideLoop(loop, area).toString()
     }
 }

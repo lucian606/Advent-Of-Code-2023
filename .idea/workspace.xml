@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d2f7a61-44c9-4dfa-a66b-fbc0ccbd62d3" name="Changes" comment="Complete Day #8 and #9">
-      <change afterPath="$PROJECT_DIR$/src/main/inputs/day10.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayTenSolver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/inputs/day10part1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/DayTenTest.kt" afterDir="false" />
+    <list default="true" id="7d2f7a61-44c9-4dfa-a66b-fbc0ccbd62d3" name="Changes" comment="Complete Day #10.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySolverFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DaySolverFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/solvers/DayTenSolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/solvers/DayTenSolver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/inputs/day10part1.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/inputs/day10part1.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/inputs/day10part2.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/inputs/day10part2.in" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,7 @@
       <recent name="solvers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DayTenTest.testPartTwo">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="DayEightTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -186,10 +183,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DayTenTest.testPartTwo" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.DayTenTest" />
+        <item itemvalue="Gradle.DayTenTest.testPartTwo" />
         <item itemvalue="Gradle.DayTenTest.testPartOne" />
+        <item itemvalue="Gradle.DayTenTest" />
         <item itemvalue="Gradle.DayEightTest" />
       </list>
     </recent_temporary>
@@ -229,6 +226,10 @@
       <workItem from="1730036788845" duration="8000" />
       <workItem from="1730036806703" duration="14000" />
       <workItem from="1730036832256" duration="13000" />
+      <workItem from="1731617521863" duration="2836000" />
+      <workItem from="1731622619664" duration="918000" />
+      <workItem from="1731685314251" duration="9330000" />
+      <workItem from="1731705074320" duration="1698000" />
     </task>
     <task id="LOCAL-00001" summary="Create repo and solve Day #1">
       <created>1701471878758</created>
@@ -328,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702162710344</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Complete Day #10.1">
+      <created>1731617615712</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731617615712</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +365,7 @@
     <MESSAGE value="Complete Day #7" />
     <MESSAGE value="Complete Day #9" />
     <MESSAGE value="Complete Day #8 and #9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete Day #8 and #9" />
+    <MESSAGE value="Complete Day #10.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete Day #10.1" />
   </component>
 </project>
